@@ -132,7 +132,7 @@ func (g *Goflow) toggle(jobName string) (bool, error) {
 }
 
 // execute tells the engine to run a given job in a new goroutine.
-func (g *Goflow) execute(job string) uuid.UUID {
+func (g *Goflow) Execute(job string) uuid.UUID {
 
 	// create job
 	j := g.Jobs[job]()
