@@ -212,7 +212,7 @@ func TestToggleRaceCondition(t *testing.T) {
 
 func exampleRouter() *gin.Engine {
 	g := New(Options{UIPath: "ui/", ShowExamples: true, WithSeconds: true})
-	g.execute("example-custom-operator")
+	g.Execute("example-custom-operator")
 	g.Use(DefaultLogger())
 	g.addStaticRoutes()
 	g.addStreamRoute(false)

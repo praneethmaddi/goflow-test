@@ -164,7 +164,7 @@ func (g *Goflow) addAPIRoutes() *Goflow {
 			msg.Job = name
 
 			if ok {
-				g.execute(name)
+				g.Execute(name)
 				msg.Success = true
 				msg.Submitted = time.Now().UTC().Format(time.RFC3339Nano)
 				c.JSON(http.StatusOK, msg)
