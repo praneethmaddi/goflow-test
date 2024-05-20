@@ -1,4 +1,5 @@
-module github.com/fieldryand/goflow/v2
+module github.com/praneethmaddi/goflow-test
+
 
 go 1.20
 
